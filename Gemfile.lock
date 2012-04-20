@@ -5,6 +5,16 @@ GIT
   specs:
     annotate (2.4.0)
 
+GIT
+  remote: git://github.com/unboxed/omniauth-ldap.git
+  revision: 835af1d66e9a95486e2d43c1610e190389f91c91
+  specs:
+    omniauth-ldap (1.0.2)
+      net-ldap (~> 0.2.2)
+      omniauth (~> 1.0)
+      pyu-ruby-sasl (~> 0.0.3.1)
+      rubyntlm (~> 0.1.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -149,6 +159,7 @@ GEM
     multi_json (1.2.0)
     multipart-post (1.1.5)
     mysql2 (0.3.11)
+    net-ldap (0.2.2)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -174,6 +185,7 @@ GEM
     permanent_records (2.1.2)
       activerecord
     polyglot (0.3.3)
+    pyu-ruby-sasl (0.0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -219,6 +231,7 @@ GEM
       activesupport (>= 3.0)
       railties (>= 3.0)
       rspec (~> 2.9.0)
+    rubyntlm (0.1.1)
     rubyzip (0.9.6.1)
     sass (3.1.15)
     sass-rails (3.2.5)
@@ -312,6 +325,7 @@ DEPENDENCIES
   mysql2
   newrelic_rpm
   omniauth-github
+  omniauth-ldap!
   open4
   permanent_records
   rails (= 3.2.2)
