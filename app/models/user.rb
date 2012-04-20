@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                         :integer(4)      not null, primary key
+#  username                   :string(255)
+#  github_access_token        :string(255)
+#  github_data                :text
+#  ssh_key_uploaded_to_github :boolean(1)      default(FALSE)
+#  created_at                 :datetime        not null
+#  updated_at                 :datetime        not null
+#  deleted_at                 :datetime
+#  token                      :string(255)
+#
+
 class User < ActiveRecord::Base
 
   cattr_accessor :disable_ssh_github_upload
