@@ -1,0 +1,11 @@
+# This is the database configuration file for Travis CI. 
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: strano_test
+  pool: 5
+  username: root
+  password:
+  socket: /var/run/mysqld/mysqld.sock
