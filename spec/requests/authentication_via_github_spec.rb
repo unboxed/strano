@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Authentication" do
+describe "Authentication via Github" do
 
   context "on successful sign in" do
     use_vcr_cassette 'Github_Key/_create', :erb => true
