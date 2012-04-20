@@ -47,6 +47,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'marked'
   gem 'ffaker'
+  gem 'debugger'
 end
 
 group :development do
