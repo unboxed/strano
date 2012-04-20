@@ -3,6 +3,8 @@ Strano
 
 The Github backed Capistrano deployment management UI.
 
+[![Build Status](https://secure.travis-ci.org/unboxed/strano.png)](http://travis-ci.org/unboxed/strano)
+
 Strano allows you to run any capistrano task via a clean and simple web interface.
 Simply create a project from any of your Github repositories, and Strano will use
 the Capistrano configuration within the repository itself. Which means you don't
