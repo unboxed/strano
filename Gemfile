@@ -48,6 +48,7 @@ group :development, :test do
   gem 'marked'
   gem 'ffaker'
   gem 'debugger'
+  gem 'capybara'
 end
 
 group :development do
