@@ -44,7 +44,15 @@
                 <%= image_tag current_user.avatar_url, :size => "24x24" %>
               </div>
             <%- else -%>
-              <span><%= link_to 'Sign in via Github', sign_in_path %></span>
+              <span><%= link_to 'Sign in via Github', sign_in_path(:provider => :github) %></span>
+              
+              <%= form_tag(authentication_callback_path(:provider => :ldap), :id => 'session') do %>
+                <%= hidden_field_tag :provider, :ldap %>
+                <%= text_field_tag(:username, nil, :placeholder => "Your LDAP username please") %>
+                <%= password_field_tag(:password, nil, :placeholder => "Your LDAP password please") %>
+                <%= submit_tag("Sign in via LDAP") %>
+              <% end %>
+
             <%- end -%>
           </div>
         </div>

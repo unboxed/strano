@@ -1,7 +1,8 @@
 class SessionsController < ApplicationController
   
   def new
-    redirect_to '/auth/github'
+    provider = params[:provider]
+    redirect_to "/auth/#{provider}"
   end
   
   # Handles the Omniauth callback after a successful Github sign in. We first

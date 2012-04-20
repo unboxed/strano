@@ -1,0 +1,18 @@
+defaults: &defaults
+  title: "My LDAP"
+  host: 'ldap.example.com'
+  port: 636
+  method: ssl
+  base: 'ou=people,dc=yourcompanyname,dc=com'
+  uid: 'uid'
+  bind_dn: 'uid=user.name,ou=people,dc=yourcompanyname,dc=com'
+  password: "your-super-secure-password"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

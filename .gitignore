@@ -16,6 +16,7 @@
 
 config/database.yml
 config/strano.yml
+config/ldap.yml
 .powenv
 
 vendor/repos
